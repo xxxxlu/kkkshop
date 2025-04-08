@@ -1,40 +1,46 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', 'Arial', sans-serif;
   color: #333;
-  background-color: #f8f9fa;
+  background-color: #fff6f0;
 }
 
 a {
-  color: #007bff;
+  color: #e67e22;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
-  color: #0056b3;
+  color: #d35400;
 }
 
 .btn-primary {
-  background-color: #15538e;
-  border-color: #15538e;
+  background-color: #e67e22;
+  border-color: #e67e22;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(230, 126, 34, 0.2);
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #10416f;
-  border-color: #10416f;
+  background-color: #d35400;
+  border-color: #d35400;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(211, 84, 0, 0.3);
 }
 
 .bg-primary {
-  background-color: #15538e !important;
+  background-color: #e67e22 !important;
 }
 
 .text-primary {
-  color: #15538e !important;
+  color: #e67e22 !important;
 }
 
 .price {
   font-weight: bold;
-  color: #15538e;
+  color: #e67e22;
+  font-size: 1.1em;
 }
 
 .original-price {
@@ -46,28 +52,80 @@ a:hover {
 .product-card {
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  border: none;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(230, 126, 34, 0.15);
 }
 
 .page-title {
   margin-bottom: 30px;
-  color: #15538e;
+  color: #e67e22;
   font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.page-title:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e67e22;
+  margin: 8px auto 0;
+  border-radius: 3px;
 }
 
 .section-title {
   margin-bottom: 20px;
-  color: #15538e;
+  color: #e67e22;
   font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e67e22;
+  margin: 8px auto 0;
+  border-radius: 3px;
 }
 
 /* Product image styles */
 .product-img {
-  height: 180px;
-  object-fit: contain;
+  height: 250px;
+  object-fit: cover;
   margin-bottom: 15px;
+  transition: transform 0.5s;
+}
+
+.product-img:hover {
+  transform: scale(1.03);
+}
+
+/* Pakistani style elements */
+.pakistani-pattern {
+  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 0C31 0 40 9 40 20C40 31 31 40 20 40C9 40 0 31 0 20C0 9 9 0 20 0Z" fill="%23e67e22" opacity="0.03"/></svg>');
+}
+
+/* Exotic curved elements */
+.curved-box {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Jewelry display style */
+.jewelry-display {
+  background: linear-gradient(135deg, #fff6f0 0%, #ffffff 100%);
+  border-radius: 15px;
+  padding: 10px;
 }
