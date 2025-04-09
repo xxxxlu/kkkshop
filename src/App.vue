@@ -4,7 +4,7 @@
       <b-navbar toggleable="lg" type="dark" variant="primary" class="rounded-navbar">
         <b-container>
           <b-navbar-brand to="/">
-            <img src="" alt="kkkshop" style="height: 40px;">
+            <p class="brand-text">kkkshop</p>
           </b-navbar-brand>
 
           <b-navbar-toggle target="nav-collapse" />
@@ -96,8 +96,19 @@ export default {
 
 .brand-text {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ff8c00; /* 橘色 */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 3px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  background: linear-gradient(45deg, #ff8c00, #e67e22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
 }
 
 .cart-count {
